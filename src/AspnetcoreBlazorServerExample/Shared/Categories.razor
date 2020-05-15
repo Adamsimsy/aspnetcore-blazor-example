@@ -1,0 +1,28 @@
+@using AspnetcoreBlazorServerExample.Data
+@using AspnetcoreBlazorServerExample.Models
+@inject ItemService ItemService
+
+<div>
+    @foreach(var category in categories)
+    {
+        <div class="container-fluid py-2">
+            <h3>@category.Name</h3>
+            <div class="d-flex flex-row flex-nowrap">
+            @foreach(var item in category.Items)
+            {
+                <CategoryItem Name="@item.Name" Image="@item.Image" Price="@item.Price" />
+            }
+            </div>
+        </div>
+    }
+</div>
+
+
+@code {    
+    private List<Category> categories;
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await ItemService.GetAllCategoriesAsync();
+    }
+}

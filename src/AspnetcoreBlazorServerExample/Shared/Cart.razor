@@ -1,16 +1,44 @@
 @using AspnetcoreBlazorServerExample.Models
-<ul>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Category</th>
+      <th scope="col">Image</th>
+      <th scope="col">Item</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
     @foreach (var category in Categories)
     {
-        <li><strong>@category.Name: </strong>
+    <tr>
+        <td>@category.Name</td>
+        <td>
         @if (SelectedItemInCategory(category) != null)
         {
-            @RenderSelectedCategoryItem(category);      
-        }  
-        </li>       
+            <img style="height: 50px;" src="@SelectedItemInCategory(category).Image" alt="Card image cap">
+        }            
+        </td>
+        <td>
+        @if (SelectedItemInCategory(category) != null)
+        {
+            @SelectedItemInCategory(category).Name
+        }            
+        </td>
+        <td>
+        @if (SelectedItemInCategory(category) != null)
+        {
+            @SelectedItemInCategory(category).Price
+        }            
+        </td>    
+    </tr> 
     }
-</ul>
-<strong>Total: </strong>@GetTotal()
+    <tr class="table-active">
+        <td colspan="3"><strong>Total: </strong></td>
+        <td><strong>@GetTotal()</strong></td>
+    </tr>
+  </tbody>
+</table>
 
 @code {
     [Parameter]

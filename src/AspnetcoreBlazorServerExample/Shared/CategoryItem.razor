@@ -6,7 +6,15 @@
         <h5 class="card-title">@Item.Name</h5>
         <h6 class="card-subtitle mb-2 text-muted">@Item.Price</h6>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <button class="btn btn-primary" @onclick="ItemAdded">Add</button>
+        @if (Item.Selected)
+        {
+            <button class="btn btn-primary" @onclick="ItemRemoved">Remove</button>
+        }
+        else
+        {
+            <button class="btn btn-primary" @onclick="ItemAdded">Add</button>
+        }
+        
     </div>
     </div>
 </div>
@@ -44,5 +52,12 @@
         return CategoriesChanged.InvokeAsync(Categories);
 
         return SelectedChanged.InvokeAsync("Selected 1");
+    }
+
+        private Task ItemRemoved()
+    {
+        Categories.Single(c => c.Id == Category.Id)?.SetRemoved(Item.Id);
+
+        return CategoriesChanged.InvokeAsync(Categories);
     }
 }

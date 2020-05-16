@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace AspnetcoreBlazorServerExample.Models
 {
@@ -17,6 +18,11 @@ namespace AspnetcoreBlazorServerExample.Models
         public void SetSelected(Guid id)
         {
             Items.ForEach(i => i.Selected = (i.Id == id) ? true : false);
+        }
+
+        public void SetRemoved(Guid id)
+        {
+            Items.SingleOrDefault(i => i.Id == id).Selected = false;
         }
     }
 }

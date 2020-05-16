@@ -3,7 +3,7 @@
 @inject ItemService ItemService
 
 <div>
-    <p>Selected: @selected</p>
+    <Cart @bind-Categories="categories" @bind-Categories:event="CategoriesChanged" />
     @foreach(var category in categories)
     {      
         <div class="container-fluid">

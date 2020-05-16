@@ -1,0 +1,54 @@
+@using AspnetcoreBlazorServerExample.Models
+<ul>
+    @foreach (var category in Categories)
+    {
+        <li><strong>@category.Name: </strong>
+        @if (SelectedItemInCategory(category) != null)
+        {
+            @RenderSelectedCategoryItem(category);      
+        }  
+        </li>       
+    }
+</ul>
+<strong>Total: </strong>@GetTotal()
+
+@code {
+    [Parameter]
+    public List<Category> Categories { get; set; }
+
+    [Parameter]
+    public EventCallback<List<Category>> CategoriesChanged { get; set; }
+
+    private string GetTotal()
+    {
+        decimal total = 0;
+
+        Categories.ForEach(c =>
+        {
+            var item = SelectedItemInCategory(c);
+
+            if (item != null)
+            {
+                total += item.Price;
+            }
+        });
+
+        return "$" + total.ToString();
+    }
+
+    private Item SelectedItemInCategory(Category category)
+    {
+        return category.Items.Where(x => x.Selected == true).Any() ? category.Items.Where(x => x.Selected == true).FirstOrDefault() : null;
+    }
+
+    private string RenderSelectedCategoryItem(Category category)
+    {
+        var item = SelectedItemInCategory(category);
+
+        if (item != null)
+        {
+            return item.Name + " - $" + item.Price.ToString();
+        }
+        return "";
+    }
+}

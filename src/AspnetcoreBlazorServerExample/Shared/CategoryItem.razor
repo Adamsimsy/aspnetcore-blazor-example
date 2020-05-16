@@ -21,7 +21,8 @@
     public decimal Price { get; set; }
     [Parameter]
     public Item Item { get; set; }
-
+    [Parameter]
+    public Category Category { get; set; }
     [Parameter]
     public string Selected { get; set; }
 
@@ -36,13 +37,12 @@
 
     private Task ItemAdded()
     {
-        Categories[0].Items[0].Selected = true;
+        Categories.Single(c => c.Id == Category.Id)?.SetSelected(Item.Id);
+
+        //Categories[0].Items[0].Selected = true;
 
         return CategoriesChanged.InvokeAsync(Categories);
 
         return SelectedChanged.InvokeAsync("Selected 1");
-        //Category.Name += " Added";
-        //Item.Name += " Added";
-        //Name += " added";
     }
 }

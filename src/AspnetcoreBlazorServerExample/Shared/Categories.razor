@@ -12,7 +12,7 @@
             <div class="row flex-nowrap">
             @foreach(var item in category.Items)
             {
-                <CategoryItem @bind-Categories="categories" @bind-Selected="selected" Item="@item" Name="@item.Name" Image="@item.Image" Price="@item.Price" />
+                <CategoryItem @bind-Categories="categories" Category="@category" @bind-Selected="selected" Item="@item" Name="@item.Name" Image="@item.Image" Price="@item.Price" />
             }
             </div>
         </div>

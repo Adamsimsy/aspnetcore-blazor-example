@@ -31,8 +31,15 @@
     [Parameter]
     public List<Category> Categories { get; set; }
 
+    [Parameter]
+    public EventCallback<List<Category>> CategoriesChanged { get; set; }
+
     private Task ItemAdded()
     {
+        Categories[0].Items[0].Selected = true;
+
+        return CategoriesChanged.InvokeAsync(Categories);
+
         return SelectedChanged.InvokeAsync("Selected 1");
         //Category.Name += " Added";
         //Item.Name += " Added";

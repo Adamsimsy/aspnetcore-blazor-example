@@ -28,7 +28,8 @@ namespace AspnetcoreBlazorServerExample.Data
                 {
                     Name = "Item 3",
                     Image = "https://www.overclockers.co.uk/media/image/thumbnail/CA09BZA_200461_210x210.jpg",
-                    Price = 12.78M
+                    Price = 12.78M,
+                    Selected = true
                 },
                 new Item()
                 {

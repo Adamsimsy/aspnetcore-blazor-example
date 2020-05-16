@@ -4,10 +4,10 @@
 
 <div>
     @foreach(var category in categories)
-    {
-        <div class="container-fluid py-2">
+    {      
+        <div class="container-fluid">
             <h3>@category.Name</h3>
-            <div class="d-flex flex-row flex-nowrap">
+            <div class="row flex-nowrap">
             @foreach(var item in category.Items)
             {
                 <CategoryItem Name="@item.Name" Image="@item.Image" Price="@item.Price" />

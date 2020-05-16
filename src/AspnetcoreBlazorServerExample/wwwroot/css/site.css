@@ -184,6 +184,6 @@ app {
 
 .card-body {
     min-height: 300px;
-    min-width: 300px;
+    min-width: 110px;
     margin-right: 5px;
 }

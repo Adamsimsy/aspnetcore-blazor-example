@@ -3,14 +3,16 @@
 @inject ItemService ItemService
 
 <div>
+    <p>Selected: @selected</p>
     @foreach(var category in categories)
     {      
         <div class="container-fluid">
             <h3>@category.Name</h3>
+            @* <h4>Selected item: @( category.Items.Where(x => x.Selected == true).Any() ? category.Items.Where(x => x.Selected == true).FirstOrDefault().Name : "" )</h4> *@
             <div class="row flex-nowrap">
             @foreach(var item in category.Items)
             {
-                <CategoryItem Name="@item.Name" Image="@item.Image" Price="@item.Price" />
+                <CategoryItem @bind-Selected="selected" Item="@item" Name="@item.Name" Image="@item.Image" Price="@item.Price" />
             }
             </div>
         </div>
@@ -19,6 +21,8 @@
 
 
 @code {    
+    private string selected;
+
     private List<Category> categories;
 
     protected override async Task OnInitializedAsync()

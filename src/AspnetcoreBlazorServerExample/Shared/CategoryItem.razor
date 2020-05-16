@@ -1,11 +1,12 @@
+@using AspnetcoreBlazorServerExample.Models
 <div class="col-3">
     <div class="card card-block">
     <div class="card-body">
-        <img class="card-img-top" src="@Image" alt="Card image cap">
-        <h5 class="card-title">@Name</h5>
-        <h6 class="card-subtitle mb-2 text-muted">@Price</h6>
+        <img class="card-img-top" src="@Item.Image" alt="Card image cap">
+        <h5 class="card-title">@Item.Name</h5>
+        <h6 class="card-subtitle mb-2 text-muted">@Item.Price</h6>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Add</a>
+        <button class="btn btn-primary" @onclick="ItemAdded">Add</button>
     </div>
     </div>
 </div>
@@ -18,4 +19,23 @@
     public string Image { get; set; }
     [Parameter]
     public decimal Price { get; set; }
+    [Parameter]
+    public Item Item { get; set; }
+
+    [Parameter]
+    public string Selected { get; set; }
+
+    [Parameter]
+    public EventCallback<string> SelectedChanged { get; set; }
+    
+    [Parameter]
+    public List<Category> Categories { get; set; }
+
+    private Task ItemAdded()
+    {
+        return SelectedChanged.InvokeAsync("Selected 1");
+        //Category.Name += " Added";
+        //Item.Name += " Added";
+        //Name += " added";
+    }
 }

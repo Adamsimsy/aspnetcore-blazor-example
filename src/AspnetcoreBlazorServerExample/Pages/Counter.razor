@@ -6,7 +6,17 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+Number:
+<input type="number" @bind="currentCount" />
+
+
+    @for (int i = 0; i < currentCount; i++)
+    {
+        <p>test @i</p>
+    }
+
 @code {
+
     private int currentCount = 0;
 
     private void IncrementCount()

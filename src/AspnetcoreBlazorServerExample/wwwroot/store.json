@@ -1,0 +1,177 @@
+[
+    {
+        "name": "Case",
+        "items": [
+            {
+                "name": "Inwin 905 RGB Tempered Glass Mid Tower E-ATX Case",
+                "image": "https://assets.umart.com.au/newsite/images/202002/thumb_img/54035_thumb_P_1581911619650.jpg",
+                "price": 245.0
+            },
+            {
+                "name": "SilverStone FT04S-W Silver w Windows Full Tower",
+                "image": "https://assets.umart.com.au/newsite/images/201906/thumb_img/51134_thumb_P_1559525765888.jpg",
+                "price": 241.0
+            },
+            {
+                "name": "Lian Li PC-O11 Dynamic XL ROG Certified Tempered Glass RGB EATX Case - Black",
+                "image": "https://assets.umart.com.au/newsite/images/201912/thumb_img/52806_thumb_P_1575264998417.jpg",
+                "price": 356.0
+            },
+            {
+                "name": "Fractal Design Define S2 Vision Tempered Glass RGB Mid Tower E-ATX Case - Blackout",
+                "image": "https://assets.umart.com.au/newsite/images/201907/thumb_img/51625_thumb_P_1562810264480.jpg",
+                "price": 349.0
+            },
+            {
+                "name": "Corsair Obsidian SE 500D RGB Tempered Glass Case",
+                "image": "https://assets.umart.com.au/newsite/images/201807/thumb_img/44576_thumb_P_1532928041431.jpg",
+                "price": 409.0
+            },
+            {
+                "name": "Cooler Master Mastercase H500M Tempered Glass RGB Mid Tower Case",
+                "image": "https://assets.umart.com.au/newsite/images/201903/thumb_img/47182_thumb_P_1552283123941.jpg",
+                "price": 329.0
+            }
+        ]
+    },
+    {
+        "name": "Motherboard",
+        "items": [
+            {
+                "name": "Asus Prime TRX40-Pro ATX Motherboard",
+                "image": "https://assets.umart.com.au/newsite/images/201911/thumb_img/53220_thumb_P_1574734840793.jpg",
+                "price": 639.0
+            },
+            {
+                "name": "Gigabyte B450M-H AM4 mATX Motherboard",
+                "image": "https://assets.umart.com.au/newsite/images/201907/thumb_img/51684_thumb_P_1562728553167.jpg",
+                "price": 108.0
+            },
+            {
+                "name": "MSI B365M Pro-VH LGA 1151 mATX Motherboard",
+                "image": "https://assets.umart.com.au/newsite/images/201908/thumb_img/52130_thumb_P_1566198005675.jpg",
+                "price": 115.0
+            },
+            {
+                "name": "MSI MPG X570 Gaming Edge WiFi AM4 ATX Motherboard",
+                "image": "https://assets.umart.com.au/newsite/images/201907/thumb_img/51601_thumb_P_1562544325531.jpg",
+                "price": 375.0
+            },
+            {
+                "name": "ASRock X570 Steel Legend AM4 ATX Motherboard",
+                "image": "https://assets.umart.com.au/newsite/images/201907/thumb_img/51634_thumb_P_1562631239724.jpg",
+                "price": 349.0
+            },
+            {
+                "name": "Gigabyte B360 Aorus Gaming 3 WiFi LGA 1151 ATX Motherboard",
+                "image": "https://assets.umart.com.au/newsite/images/201804/thumb_img/43404_thumb_G_1523926493961.jpg",
+                "price": 259.0
+            }
+        ]
+    },
+    {
+        "name": "CPU",
+        "items": [
+            {
+                "name": "Intel Core i7 9700K 8 Core LGA 1151 3.6GHz CPU Processor",
+                "image": "https://assets.umart.com.au/newsite/images/201903/thumb_img/47617_thumb_P_1552956937353.jpg",
+                "price": 659.0
+            },
+            {
+                "name": "AMD Ryzen Threadripper 2990WX 32-Core Socket TR4",
+                "image": "https://assets.umart.com.au/newsite/images/201808/thumb_img/45297_thumb_P_1533622139395.jpg",
+                "price": 2689.0
+            },
+            {
+                "name": "Intel Core i7 9700K 8 Core LGA 1151 3.6GHz CPU Processor",
+                "image": "https://assets.umart.com.au/newsite/images/201903/thumb_img/47617_thumb_P_1552956937353.jpg",
+                "price": 659.0
+            },
+            {
+                "name": "AMD Ryzen 3 3200G 4 Core AM4 3.6GHz APU with Radeon",
+                "image": "https://assets.umart.com.au/newsite/images/201908/thumb_img/51574_thumb_P_1565841767299.jpg",
+                "price": 159.0
+            },
+            {
+                "name": "Intel Core i7 9700 8 Core LGA 1151 3.0GHz CPU Processor",
+                "image": "https://assets.umart.com.au/newsite/images/201910/thumb_img/52343_thumb_P_1571270679044.jpg",
+                "price": 660.0
+            },
+            {
+                "name": "AMD Ryzen 9 3950X 16 Core AM4 3.5GHz CPU Processor",
+                "image": "https://assets.umart.com.au/newsite/images/201911/thumb_img/53211_thumb_P_1574724092329.jpg",
+                "price": 1299.0
+            }
+        ]
+    },
+    {
+        "name": "RAM",
+        "items": [
+            {
+                "name": "Kingston F1G72F51 8G Server Memory DDR2-667 Fully Buffered",
+                "image": "https://assets.umart.com.au/dbs/images/products/26647.jpg",
+                "price": 225.0
+            },
+            {
+                "name": "Corsair 16GB (2x8GB) CMT16GX4M2Z3200C16",
+                "image": "https://assets.umart.com.au/newsite/images/201905/thumb_img/50830_thumb_P_1557467580304.jpg",
+                "price": 199.0
+            },
+            {
+                "name": "G.Skill 16GB (2x8GB) F4-3600C16D-16GTZN Trident Z",
+                "image": "https://assets.umart.com.au/newsite/images/201908/thumb_img/51994_thumb_P_1565152159165.jpg",
+                "price": 269.0
+            },
+            {
+                "name": "G.Skill 32GB (2x16GB) F4-3600C19D-32GTRG Royal",
+                "image": "https://assets.umart.com.au/newsite/images/201905/thumb_img/50794_thumb_P_1556771317648.jpg",
+                "price": 369.0
+            },
+            {
+                "name": "Corsair 64GB (4x16GB) CMW64GX4M4C3000C15",
+                "image": "https://assets.umart.com.au/newsite/images/201901/thumb_img/49346_thumb_P_1547103345238.jpg",
+                "price": 599.0
+            },
+            {
+                "name": "G.Skill 32GB (2x16GB) F4-3200C16D-32GTZN Trident Z Neo",
+                "image": "https://assets.umart.com.au/newsite/images/201908/thumb_img/52148_thumb_P_1566271151662.jpg",
+                "price": 325.0
+            }
+        ]
+    },
+    {
+        "name": "Graphics Card",
+        "items": [
+            {
+                "name": "Asus GeForce RTX 2080 Ti Strix Gaming Advanced Edition 11G",
+                "image": "https://assets.umart.com.au/newsite/images/201903/thumb_img/48412_thumb_P_1552285291020.jpg",
+                "price": 2299.0
+            },
+            {
+                "name": "Gigabyte GeForce RTX 2080 Ti Gaming 11G OC Graphics Card",
+                "image": "https://assets.umart.com.au/newsite/images/201809/thumb_img/47312_thumb_P_1538003624724.jpg",
+                "price": 1999.0
+            },
+            {
+                "name": "Asus GeForce RTX 2080 Super ROG Strix Gaming 8G OC",
+                "image": "https://assets.umart.com.au/newsite/images/201908/thumb_img/51797_thumb_P_1564632310271.jpg",
+                "price": 1499.0
+            },
+            {
+                "name": "Galax Geforce RTX 2080 Ti SG 1-Click OC 11G Graphics Card",
+                "image": "https://assets.umart.com.au/newsite/images/201912/thumb_img/53565_thumb_P_1577084825931.jpg",
+                "price": 1899.0
+            },
+            {
+                "name": "MSI GeForce RTX 2080 Super Gaming X Trio 8GB Graphics Card",
+                "image": "https://assets.umart.com.au/newsite/images/201907/thumb_img/51800_thumb_P_1563936739235.jpg",
+                "price": 1399.0
+            },
+            {
+                "name": "Gigabyte GeForce RTX2080 Ti Aorus Xtreme 11G Graphics Card",
+                "image": "https://assets.umart.com.au/newsite/images/201902/thumb_img/48283_thumb_P_1549506944989.jpg",
+                "price": 2289.0
+            }
+        ]
+    }
+]

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using AspnetcoreBlazorServerExample.Models;
@@ -10,6 +11,12 @@ namespace AspnetcoreBlazorServerExample.Data
     {
         public Task<List<Category>> GetAllCategoriesAsync()
         {
+
+            var folderDetails = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\\store.json");  
+            var json = System.IO.File.ReadAllText(folderDetails);  
+            var jsonObj = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Category>>(json);
+
+
             var items = new List<Item>()
             {
                 new Item()
@@ -227,7 +234,7 @@ namespace AspnetcoreBlazorServerExample.Data
                 },                                                
             };
 
-            return Task.FromResult(categories);
+            return Task.FromResult(jsonObj);
         }
     }
 }
